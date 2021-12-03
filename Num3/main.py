@@ -55,3 +55,4 @@ for mask in masks:
   amount = count(image, mask)
   total_amount += amount
   print(f'number of objects of the {i} type:', amount)
+print('total number of objects:', total_amount)
