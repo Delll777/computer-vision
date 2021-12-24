@@ -41,7 +41,7 @@ def get_color_figure(region):
     if color_figures < border_colors[2]:
         return 'green'
     if color_figures < border_colors[3]:
-        return 'lightgreen'
+        return 'light-green'
     if color_figures < border_colors[4]:
         return 'blue'
     if color_figures < border_colors[5]:
@@ -49,7 +49,7 @@ def get_color_figure(region):
     return 'red'
 
 
-image = plt.imread('count-figers-color_and_shape/balls_and_rects.png')
+image = plt.imread('color-and-shape/balls_and_rects.png')
 hsv_image = color.rgb2hsv(image)
 
 binary = np.sum(image, 2)
